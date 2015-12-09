@@ -1,0 +1,252 @@
+@import url(http://allfont.ru/allfont.css?fonts=cuprum);
+@import url(http://allfont.ru/allfont.css?fonts=cuprum-bold);
+
+
+body {
+    font-family: 'Cuprum';
+    background: url('../images/bg4.jpg') no-repeat left top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*Блок HEADER*/
+header {                    
+    height: 95px;
+    position: relative;
+}
+
+.whiteStripe {              /*Белая полоса навигации*/
+    height: 40px;
+    width: 100%;
+    min-width: 970px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 27px;
+}
+
+.iHeader {                  /*Внутренний блок шапки*/
+    height: 95px;
+    width: 970px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.mainLogo {                 /*Главный логотип сайта*/
+    height: 95px;
+    width: 67px;
+    background-image: url('../images/logoBgWE.png');
+    float: left;
+    -moz-box-shadow: 5px 5px 25px #000000;
+    -webkit-box-shadow: 5px 5px 25px #000000;
+    box-shadow: 5px 5px 25px #000000;
+    filter: progid:DXImageTransform.Microsoft.Shadow(strength = 5, direction = 135, color = '#000000');
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(strength = 5, Direction = 135, Color = '#000000')";
+}
+
+
+.mainLogo a {
+    display: block;
+    height: 95px;
+    width: 67px;
+}
+
+nav.mainNav {           /*Навигационная панель*/
+    height: 40px;
+    position: absolute;
+    top: 27px;
+    margin-left: 167px;
+}
+
+.mainNav li {
+    height: 40px;
+    float: left;
+}
+
+.mainNav li a {
+    display: block;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 40px;
+    text-decoration: none;
+    font-family: 'Cuprum Bold';
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #003068;
+    background: url('../images/navStrip.png') right no-repeat;
+    }
+
+.mainNav li:last-of-type a {            /*Убираем в последней кнопочке навигации синюю полоску в конце*/
+    background-image: none;
+    }
+
+.mainNav li a:hover {                   /*При наведении кнопки навигации меняют цвет на серый*/
+    text-decoration: underline;
+    background-color: #EEEEEE; 
+}
+
+/*Блок CONTENT*/
+
+.content {
+    height: 1500px;
+    margin-top: 40px;
+    position: relative;
+    outline: 1px solid red;
+}
+
+.iContent {
+    height: 1500px;
+    width: 970px;
+    position: relative;
+    margin: 0 auto;
+    outline: 1px solid blue;
+}
+
+.carousel {                                         /*Carousel*/
+    width: 640px;
+    height: 480px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+.iCarousel {
+    width: 620px;
+    height: 420px;
+    margin: 10px auto 0 auto;
+    background: url('../images/bg5.jpg') no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;    
+}
+
+.iCarouselFooter {
+    height: 40px;
+    width: 620px;
+    margin: 0 auto;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    line-height: 40px;
+    background: #003068; /* Old browsers */
+    background: -moz-linear-gradient(top, #003068 0%, #005C88 50%, #003068 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #003068 0%,#005C88 50%,#003068 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #003068 0%,#005C88 50%,#003068 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003068', endColorstr='#003068',GradientType=0 ); /* IE6-9*/  
+}
+
+.news {                                              /*News*/
+    width: 310px;
+    height: 480px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    
+}
+
+.news div {
+    width: 290px;
+    height: 460px;
+    position: absolute;
+    top: 10px;
+    left: 10px; 
+    border: 1px solid #AFB0B2;
+}
+
+.news h2, .iEvents h2 {
+    height: 40px;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    background: #003068; /* Old browsers */
+    background: -moz-linear-gradient(top, #003068 0%, #005C88 50%, #003068 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #003068 0%,#005C88 50%,#003068 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #003068 0%,#005C88 50%,#003068 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003068', endColorstr='#003068',GradientType=0 ); /* IE6-9 */
+}
+
+
+
+.news a {
+    border-bottom: 1px solid #AFB0B2;
+    display:block;
+    font-size: 16px;
+    color: #333333;
+    text-decoration: none;
+    padding: 20px 10px 20px 10px;
+}
+
+.news a:hover {
+    background-color: #EEEEEE; 
+}
+
+.news a:last-of-type {
+    border-bottom: none;
+}
+
+.events {
+    width: 722px;
+    height: 658px;
+    position: absolute;
+    top: 500px;
+    left: 0;
+    background-color: white;
+    outline: 1px solid green;
+}
+
+.iEvents {
+    width: 702px;
+    height: 638px;
+    margin: 10px auto auto auto;
+    outline: 1px solid red;
+}
+
+.iEvents table {
+    width: 702px;
+    height: 598px;
+    outline: 1px solid blue;
+}
+
+.iEvents table tbody tr {
+    height: 294px;
+    width: 702px;
+    outline: 1px solid black;
+    border-bottom: 10px solid white; 
+    
+}
+
+.iEvents table tbody tr td {
+    height: 299px;
+    width: 351px;
+    outline: 1px solid green;
+    
+}
+
+.iEvents table tbody tr td a {
+    display: block;
+    height: 294px;
+    width: 346px;
+    outline: 1px solid blue;
+    text-decoration: none;
+}
+
+.iEvents table tbody tr td:last-of-type a {
+    margin-left: 5px;
+}
+
+.iEvents table tbody tr:last-of-type a {
+    margin-top: 5px;
+}
+
+.iEvents img {
+    display:block;
+    height: 194px;
+    width: 346px;
+    outline: 1px solid red;
+}
