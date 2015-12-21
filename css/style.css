@@ -1,4 +1,4 @@
-@import url(http://allfont.ru/allfont.css?fonts=cuprum);
+п»ї@import url(http://allfont.ru/allfont.css?fonts=cuprum);
 @import url(http://allfont.ru/allfont.css?fonts=cuprum-bold);
 
 
@@ -11,13 +11,13 @@ body {
     background-size: cover;
 }
 
-/*Блок HEADER*/
+/*Р‘Р»РѕРє HEADER*/
 header {                    
     height: 95px;
     position: relative;
 }
 
-.whiteStripe {              /*Белая полоса навигации*/
+.whiteStripe {              /*Р‘РµР»Р°СЏ РїРѕР»РѕСЃР° РЅР°РІРёРіР°С†РёРё*/
     height: 40px;
     width: 100%;
     min-width: 970px;
@@ -26,14 +26,14 @@ header {
     top: 27px;
 }
 
-.iHeader {                  /*Внутренний блок шапки*/
+.iHeader {                  /*Р’РЅСѓС‚СЂРµРЅРЅРёР№ Р±Р»РѕРє С€Р°РїРєРё*/
     height: 95px;
     width: 970px;
     position: relative;
     margin: 0 auto;
 }
 
-.mainLogo {                 /*Главный логотип сайта*/
+.mainLogo {                 /*Р“Р»Р°РІРЅС‹Р№ Р»РѕРіРѕС‚РёРї СЃР°Р№С‚Р°*/
     height: 95px;
     width: 67px;
     background-image: url('../images/logoBgWE.png');
@@ -52,7 +52,7 @@ header {
     width: 67px;
 }
 
-nav.mainNav {           /*Навигационная панель*/
+nav.mainNav {           /*РќР°РІРёРіР°С†РёРѕРЅРЅР°СЏ РїР°РЅРµР»СЊ*/
     height: 40px;
     position: absolute;
     top: 27px;
@@ -78,30 +78,28 @@ nav.mainNav {           /*Навигационная панель*/
     background: url('../images/navStrip.png') right no-repeat;
     }
 
-.mainNav li:last-of-type a {            /*Убираем в последней кнопочке навигации синюю полоску в конце*/
+.mainNav li:last-of-type a {            /*РЈР±РёСЂР°РµРј РІ РїРѕСЃР»РµРґРЅРµР№ РєРЅРѕРїРѕС‡РєРµ РЅР°РІРёРіР°С†РёРё СЃРёРЅСЋСЋ РїРѕР»РѕСЃРєСѓ РІ РєРѕРЅС†Рµ*/
     background-image: none;
     }
 
-.mainNav li a:hover {                   /*При наведении кнопки навигации меняют цвет на серый*/
+.mainNav li a:hover {                   /*РџСЂРё РЅР°РІРµРґРµРЅРёРё РєРЅРѕРїРєРё РЅР°РІРёРіР°С†РёРё РјРµРЅСЏСЋС‚ С†РІРµС‚ РЅР° СЃРµСЂС‹Р№*/
     text-decoration: underline;
     background-color: #EEEEEE; 
 }
 
-/*Блок CONTENT*/
+/*Р‘Р»РѕРє CONTENT*/
 
 .content {
-    height: 1500px;
+    height: 1280px;
     margin-top: 40px;
     position: relative;
-    outline: 1px solid red;
 }
 
 .iContent {
-    height: 1500px;
+    height: 1280px;
     width: 970px;
     position: relative;
     margin: 0 auto;
-    outline: 1px solid blue;
 }
 
 .carousel {                                         /*Carousel*/
@@ -117,27 +115,12 @@ nav.mainNav {           /*Навигационная панель*/
     width: 620px;
     height: 420px;
     margin: 10px auto 0 auto;
-    background: url('../images/bg5.jpg') no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;    
 }
 
-.iCarouselFooter {
-    height: 40px;
-    width: 620px;
-    margin: 0 auto;
-    color: white;
-    font-size: 22px;
-    text-align: center;
-    line-height: 40px;
-    background: #003068; /* Old browsers */
-    background: -moz-linear-gradient(top, #003068 0%, #005C88 50%, #003068 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #003068 0%,#005C88 50%,#003068 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #003068 0%,#005C88 50%,#003068 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003068', endColorstr='#003068',GradientType=0 ); /* IE6-9*/  
-}
 
 .news {                                              /*News*/
     width: 310px;
@@ -158,7 +141,7 @@ nav.mainNav {           /*Навигационная панель*/
     border: 1px solid #AFB0B2;
 }
 
-.news h2, .iEvents h2 {
+.news h2, .iEvents h2, .iFriends h2 {
     height: 40px;
     font-size: 22px;
     color: white;
@@ -190,49 +173,41 @@ nav.mainNav {           /*Навигационная панель*/
     border-bottom: none;
 }
 
-.events {
+.events {                                           /*Events*/
     width: 722px;
     height: 658px;
     position: absolute;
     top: 500px;
     left: 0;
     background-color: white;
-    outline: 1px solid green;
 }
 
 .iEvents {
     width: 702px;
     height: 638px;
     margin: 10px auto auto auto;
-    outline: 1px solid red;
 }
 
 .iEvents table {
     width: 702px;
     height: 598px;
-    outline: 1px solid blue;
 }
 
 .iEvents table tbody tr {
     height: 294px;
     width: 702px;
-    outline: 1px solid black;
     border-bottom: 10px solid white; 
-    
 }
 
 .iEvents table tbody tr td {
     height: 299px;
     width: 351px;
-    outline: 1px solid green;
-    
-}
+ }
 
 .iEvents table tbody tr td a {
     display: block;
     height: 294px;
     width: 346px;
-    outline: 1px solid blue;
     text-decoration: none;
 }
 
@@ -248,5 +223,95 @@ nav.mainNav {           /*Навигационная панель*/
     display:block;
     height: 194px;
     width: 346px;
-    outline: 1px solid red;
+}
+
+.iEvents h3 {
+    padding: 10px 0;
+    font-size: 22px;
+    color: #152C53;
+}
+
+.iEvents p {
+    color: #333333;
+}
+
+.iEvents table tbody tr td a:hover {
+    text-decoration: underline;
+}
+
+.friends {
+    width: 228px;
+    height: 458px;
+    position: absolute;
+    top: 600px;
+    right: 0;
+    background-color: white;    
+}
+
+.iFriends {
+    width: 208px;
+    height: 438px;
+    margin: 10px auto auto auto;   
+}
+
+.iFriends ul {
+    width: 208px;
+    height: 398px;   
+}
+
+.iFriends ul li {
+    height: 99px;
+    border: 1px solid #AFB0B2;
+    border-top: 0;
+}
+
+.iFriends ul li a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+}
+
+.iFriends ul li a:hover {
+    background-color: #EEEEEE;
+}
+
+.iFriends ul li a img {    
+    margin: 10px auto;    
+}
+
+footer {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top: 1180px;
+    background-color: white;
+}
+
+footer img {
+    margin-top: 20px;
+    margin-left: 40px;
+    float: left;
+}
+
+footer ul {
+    height: 100px;
+    width: 200px;
+    float: left;
+    margin-left: 100px;
+}
+
+footer ul li a {
+    display: block;
+    text-decoration: none;
+    color: #333333;
+    padding-top: 3px;
+    font-size: 16px;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
 }

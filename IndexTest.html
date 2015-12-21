@@ -1,0 +1,32 @@
+﻿
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="myApp">
+ <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lazy Loading Responsive Carousel by RL</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="components/lazy-carousel/css/lazy-carousel.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Lazy Carousel Directive #1</h2>
+        <div id="lazy-1" lazy-carousel data-source="components/lazy-carousel/data/items.json"></div>
+        <h2>Lazy Carousel Directive #2</h2>
+        <div id="lazy-2" lazy-carousel data-source="components/lazy-carousel/data/heros.json"></div>
+    </div>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="components/lazy-carousel/lazy-carousel.module.js"></script>
+    <script src="components/lazy-carousel/lazy-carousel.controller.js"></script>
+    <script src="components/lazy-carousel/lazy-carousel.directive.js"></script>
+    <script src="components/lazy-carousel/lazy-carousel.service.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+﻿{
+  "items" : [
+    {
+      "img": "statics/images/bukovel.jpg",
+      "alt" : "Буковель"
+    },
+    {
+      "img": "statics/images/dragobrat.jpeg",
+      "alt" : "Драгобрат"
+    },
+    {
+      "img": "statics/images/jablunica.jpg",
+      "alt" : "Яблуница"
+    },
+    {
+      "img": "statics/images/krasija.jpg",
+      "alt" : "Красия"
+    },
+    {
+      "img": "statics/images/migovo.jpg",
+      "alt" : "Мигово"
+    },
+    {
+      "img": "statics/images/pilipec.jpg",
+      "alt" : "Пилипец"
+    },
+    {
+      "img": "statics/images/slavskoe.jpg",
+      "alt" : "Славское"
+    }
+  ]
+}

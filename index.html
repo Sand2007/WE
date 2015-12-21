@@ -1,15 +1,19 @@
-<!DOCTYPE html>
-<html>
+п»ї<!DOCTYPE html>
+<html ng-app="myApp">
 <head>
     <title>WE</title>
-    <meta name="WE" content="width=device-width, initial-scale=1.0">
+       
+    
     <link href="css/style.css" rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet">
-   
+    
+    <link rel="stylesheet" href="components/lazy-carousel/css/lazy-carousel.css">
+
 </head>
 <body>
-    
-    <header>                                    <!--Блок HEADER-->
+
+    <header>
+        <!--Р‘Р»РѕРє HEADER-->
         <div class="whiteStripe"></div>
         <div class="iHeader">
             <div class="mainLogo">
@@ -17,55 +21,58 @@
             </div>
             <nav class="mainNav">
                 <ul>
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="#">Магазины</a></li>
-                    <li><a href="#">Места</a></li>
-                    <li><a href="#">Видео</a></li>
-                    <li><a href="#">Блог</a></li>
+                    <li><a href="index.html">Р“Р»Р°РІРЅР°СЏ</a></li>
+                    <li><a href="#">РњРµСЃС‚Р°</a></li>
+                    <li><a href="#">РњР°РіР°Р·РёРЅС‹</a></li>
+                    <li><a href="#">Р’РёРґРµРѕ</a></li>
+                    <li><a href="#">Р‘Р»РѕРі</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <div class="content">                                   <!--Блок CONTENT-->
+    <div class="content">
+        <!--Р‘Р»РѕРє CONTENT-->
         <div class="iContent">
-            <div class="carousel">                              <!--Карусель-->
+            <div class="carousel">
+                <!--РљР°СЂСѓСЃРµР»СЊ-->
                 <div class="iCarousel">
+                    <div id="lazy-1" lazy-carousel data-source="components/lazy-carousel/data/items.json"></div>
                 </div>
-                <div class="iCarouselFooter">
-                    "Малая Швейцария" город Харьков
-                </div>
+                
             </div>
-            <div class="news">                                      <!--Новости-->
+            <div class="news">
+                <!--РќРѕРІРѕСЃС‚Рё-->
                 <div>
-                    <h2>Новости блога</h2>
-                    <a href="#">Значимость этих проблем настолько очевидна</a>
-                    <a href="#">Разнообразный и богатый опыт реализация намеченных плановых заданий</a> 
-                    <a href="#">Равным образом сложившаяся структура</a> 
-                    <a href="#">Таким образом начало повседневной работы по формированию</a>
-                    <a href="#">Товарищи! новая модель организационной деятельности</a>   
+                    <h2>РќРѕРІРѕСЃС‚Рё Р±Р»РѕРіР°</h2>
+                    <a href="#">Р—РЅР°С‡РёРјРѕСЃС‚СЊ СЌС‚РёС… РїСЂРѕР±Р»РµРј РЅР°СЃС‚РѕР»СЊРєРѕ РѕС‡РµРІРёРґРЅР°</a>
+                    <a href="#">Р Р°Р·РЅРѕРѕР±СЂР°Р·РЅС‹Р№ Рё Р±РѕРіР°С‚С‹Р№ РѕРїС‹С‚ СЂРµР°Р»РёР·Р°С†РёСЏ РЅР°РјРµС‡РµРЅРЅС‹С… РїР»Р°РЅРѕРІС‹С… Р·Р°РґР°РЅРёР№</a>
+                    <a href="#">Р Р°РІРЅС‹Рј РѕР±СЂР°Р·РѕРј СЃР»РѕР¶РёРІС€Р°СЏСЃСЏ СЃС‚СЂСѓРєС‚СѓСЂР°</a>
+                    <a href="#">РўР°РєРёРј РѕР±СЂР°Р·РѕРј РЅР°С‡Р°Р»Рѕ РїРѕРІСЃРµРґРЅРµРІРЅРѕР№ СЂР°Р±РѕС‚С‹ РїРѕ С„РѕСЂРјРёСЂРѕРІР°РЅРёСЋ</a>
+                    <a href="#">РўРѕРІР°СЂРёС‰Рё! РЅРѕРІР°СЏ РјРѕРґРµР»СЊ РѕСЂРіР°РЅРёР·Р°С†РёРѕРЅРЅРѕР№ РґРµСЏС‚РµР»СЊРЅРѕСЃС‚Рё</a>
                 </div>
-                                                                     
+
 
             </div>
-            <div class="events">                                <!--Мероприятия-->
+            <div class="events">
+                <!--РњРµСЂРѕРїСЂРёСЏС‚РёСЏ-->
                 <div class="iEvents">
-                    <h2>Мероприятия</h2>
+                    <h2>РњРµСЂРѕРїСЂРёСЏС‚РёСЏ</h2>
                     <table>
                         <tbody>
                             <tr>
                                 <td>
                                     <a href="#">
                                         <img src="images/eventsImg1.jpg" />
-                                        <h3>Заголовок</h3>
-                                        <p>Текст</p>
+                                        <h3>Р›С‹Р¶РЅР°СЏ Р·РёРјР° РІ РђР»СЊРїР°С…</h3>
+                                        <p>РќРµ СЃР»РµРґСѓРµС‚, РѕРґРЅР°РєРѕ Р·Р°Р±С‹РІР°С‚СЊ, С‡С‚Рѕ РїРѕСЃС‚РѕСЏРЅРЅС‹Р№ РєРѕР»РёС‡РµСЃС‚РІРµРЅРЅС‹Р№ СЂРѕСЃС‚ Рё СЃС„РµСЂР° РЅР°С€РµР№ Р°РєС‚РёРІРЅРѕСЃС‚Рё РїСЂРµРґСЃС‚Р°РІР»СЏРµС‚</p>
                                     </a>
                                 </td>
                                 <td>
                                     <a href="#">
                                         <img src="images/eventsImg2.jpg" />
-                                        <h3>Заголовок</h3>
-                                        <p>Текст</p>
+                                        <h3>Р­РєСЃС‚СЂРёРјР°Р»СЊРЅС‹Р№ СЃРЅРѕСѓР±РѕСЂРґРёРЅРі РЅР° РіРѕСЂР°С…))</h3>
+                                        <p>РўРѕРІР°СЂРёС‰Рё! СЂР°РјРєРё Рё РјРµСЃС‚Рѕ РѕР±СѓС‡РµРЅРёСЏ РєР°РґСЂРѕРІ С‚СЂРµР±СѓСЋС‚ РѕС‚ РЅР°СЃ </p>
                                     </a>
                                 </td>
                             </tr>
@@ -73,15 +80,15 @@
                                 <td>
                                     <a href="#">
                                         <img src="images/eventsImg3.jpg" />
-                                        <h3>Заголовок</h3>
-                                        <p>Текст</p>
+                                        <h3>РџРѕРєР°С‚Р°РµРјСЃСЏ РЅР° СЃРЅРµРіРѕС…РѕРґР°С… РІ РґРµРєР°Р±СЂРµ</h3>
+                                        <p>Р Р°РІРЅС‹Рј РѕР±СЂР°Р·РѕРј РїРѕСЃС‚РѕСЏРЅРЅС‹Р№ РєРѕР»РёС‡РµСЃС‚РІРµРЅРЅС‹Р№ СЂРѕСЃС‚ Рё СЃС„РµСЂР° РЅР°С€РµР№ Р°РєС‚РёРІРЅРѕСЃС‚Рё РІР»РµС‡РµС‚ </p>
                                     </a>
                                 </td>
                                 <td>
                                     <a href="#">
                                         <img src="images/eventsImg4.jpg" />
-                                        <h3>Заголовок</h3>
-                                        <p>Текст</p>
+                                        <h3>Р›С‹Р¶РЅС‹Р№ СЌРєСЃС‚СЂРёРј</h3>
+                                        <p>РўР°РєРёРј РѕР±СЂР°Р·РѕРј РґР°Р»СЊРЅРµР№С€РµРµ СЂР°Р·РІРёС‚РёРµ СЂР°Р·Р»РёС‡РЅС‹С… С„РѕСЂРј РґРµСЏС‚РµР»СЊРЅРѕСЃС‚Рё</p>
                                     </a>
                                 </td>
                             </tr>
@@ -89,13 +96,62 @@
                     </table>
                 </div>
             </div>
-            <div class="friends"></div>                         <!--Друзья сайта-->
+            <div class="friends">
+                <!--Р”СЂСѓР·СЊСЏ СЃР°Р№С‚Р°-->
+                <div class="iFriends">
+                    <h2>РќР°С€Рё РґСЂСѓР·СЊСЏ</h2>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="images/khPartners.png" />
+                                <h3>РҐР°СЂСЊРєРѕРІСЃРєР°СЏ РЁРІРµР№С†Р°СЂРёСЏ</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/bucPartners.png" />
+                                <h3>Р‘СѓРєРѕРІРµР»СЊ</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/vorohtaPartners.png" />
+                                <h3>Р“РѕСЂРЅРѕР»С‹Р¶РЅС‹Р№ РєСѓСЂРѕСЂС‚ Р’РѕСЂРѕС…С‚Р°</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/extremePartners.png" />
+                                <h3>РњР°РіР°Р·РёРЅ СЌРєСЃС‚СЂРёРјР°Р»СЊРЅРѕРіРѕ СЃРЅР°СЂСЏР¶РµРЅРёСЏ</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <footer>
+                <img src="images/logoBgMiniWE.png" />
+                <ul>
+                    <li><a href="index.html">Р“Р»Р°РІРЅР°СЏ</a></li>
+                    <li><a href="#">РњРµСЃС‚Р°</a></li>
+                    <li><a href="#">РњР°РіР°Р·РёРЅС‹</a></li>
+                    <li><a href="#">Р’РёРґРµРѕ</a></li>
+                    <li><a href="#">Р‘Р»РѕРі</a></li>
+                </ul>
+            </footer>
         </div>
 
-    </div>    
-       
-        
-   
-    <footer></footer>
+    </div>
+
+
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="components/lazy-carousel/lazy-carousel.module.js"></script>
+    <script src="components/lazy-carousel/lazy-carousel.controller.js"></script>
+    <script src="components/lazy-carousel/lazy-carousel.directive.js"></script>
+    <script src="components/lazy-carousel/lazy-carousel.service.js"></script>
+
 </body>
 </html>
