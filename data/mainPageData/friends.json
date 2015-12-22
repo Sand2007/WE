@@ -1,0 +1,22 @@
+﻿[
+  {
+    "a": "#",
+    "img": "images/khPartners.png",
+    "h": "Харьковская Швейцария"
+  },
+  {
+    "a": "#",
+    "img": "images/bucPartners.png",
+    "h": "Буковель"
+  },
+  {
+    "a": "#",
+    "img": "images/vorohtaPartners.png",
+    "h": "Горнолыжный курорт Ворохта"
+  },
+  {
+    "a": "#",
+    "img": "images/extremePartners.png",
+    "h": "Магазин экстримального снаряжения"
+  }
+]

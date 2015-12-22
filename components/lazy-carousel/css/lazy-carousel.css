@@ -47,15 +47,13 @@
 	width: 100%;
 	bottom: 0;
 	color: #fff;
-	
 	background: #003068; /* Old browsers */
     background: -moz-linear-gradient(top, #003068 0%, #005C88 50%, #003068 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, #003068 0%,#005C88 50%,#003068 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, #003068 0%,#005C88 50%,#003068 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003068', endColorstr='#003068',GradientType=0 ); /* IE6-9*/  
 	padding: 1.5% 2%;
-	margin: 0;
-	
+	margin: 0;	
 }
 
 .lazy-element .cover {
@@ -68,8 +66,6 @@
 	z-index: 2;
 }
 
-
-
 .lazy-element .error {
 	background: url('../statics/error.png') center center no-repeat;
 	width: 100%;
@@ -80,14 +76,10 @@
 	box-sizing:border-box;
 	padding: 5%;
 	font-weight: bold;
-	/* padding: 5% 0 0 0; */
-	
+	/* padding: 5% 0 0 0; */	
 	font-size: 30px;
-   text-decoration: underline;
+    text-decoration: underline;
 }
-
-
-
 
 .lazy-caousel-wrapper .loader {
 	position: absolute;
@@ -108,12 +100,7 @@
 	background-image: url('../statics/arrow.svg');
 	background-size: 100%;
 	background-repeat: no-repeat;
-
-
-
 }
-
-
 
 .lazy-arrow:hover {opacity: 1 }
 
@@ -124,8 +111,6 @@
 	-webkit-transform: rotate(180deg);
     transform: rotate(180deg);
 }
-
-
 
 @media only screen and (max-width: 640px) {
 

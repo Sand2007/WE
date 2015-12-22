@@ -1,17 +1,12 @@
 ﻿<!DOCTYPE html>
-<html ng-app="myApp">
+<html ng-app="mainApp">
 <head>
-    <title>WE</title>
-       
-    
+    <title>WE</title>   
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/reset.css" rel="stylesheet">
-    
+    <link href="css/reset.css" rel="stylesheet">    
     <link rel="stylesheet" href="components/lazy-carousel/css/lazy-carousel.css">
-
 </head>
-<body>
-
+<body ng-controller="mainCtrl">
     <header>
         <!--Блок HEADER-->
         <div class="whiteStripe"></div>
@@ -30,7 +25,6 @@
             </nav>
         </div>
     </header>
-
     <div class="content">
         <!--Блок CONTENT-->
         <div class="iContent">
@@ -38,21 +32,14 @@
                 <!--Карусель-->
                 <div class="iCarousel">
                     <div id="lazy-1" lazy-carousel data-source="components/lazy-carousel/data/items.json"></div>
-                </div>
-                
+                </div>                
             </div>
             <div class="news">
                 <!--Новости-->
                 <div>
                     <h2>Новости блога</h2>
-                    <a href="#">Значимость этих проблем настолько очевидна</a>
-                    <a href="#">Разнообразный и богатый опыт реализация намеченных плановых заданий</a>
-                    <a href="#">Равным образом сложившаяся структура</a>
-                    <a href="#">Таким образом начало повседневной работы по формированию</a>
-                    <a href="#">Товарищи! новая модель организационной деятельности</a>
+                    <a ng-repeat="news in newsblog" href="{{news.link}}">{{news.news}}</a>
                 </div>
-
-
             </div>
             <div class="events">
                 <!--Мероприятия-->
@@ -60,38 +47,15 @@
                     <h2>Мероприятия</h2>
                     <table>
                         <tbody>
-                            <tr>
-                                <td>
-                                    <a href="#">
-                                        <img src="images/eventsImg1.jpg" />
-                                        <h3>Лыжная зима в Альпах</h3>
-                                        <p>Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности представляет</p>
+                            <tr ng-repeat="trevent in events">
+                                <td ng-repeat="tdevent in trevent">
+                                    <a href="{{tdevent.a}}">
+                                        <img src="{{tdevent.img}}" />
+                                        <h3>{{tdevent.h}}</h3>
+                                        <p>{{tdevent.p}}</p>
                                     </a>
                                 </td>
-                                <td>
-                                    <a href="#">
-                                        <img src="images/eventsImg2.jpg" />
-                                        <h3>Экстримальный сноубординг на горах))</h3>
-                                        <p>Товарищи! рамки и место обучения кадров требуют от нас </p>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="#">
-                                        <img src="images/eventsImg3.jpg" />
-                                        <h3>Покатаемся на снегоходах в декабре</h3>
-                                        <p>Равным образом постоянный количественный рост и сфера нашей активности влечет </p>
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="#">
-                                        <img src="images/eventsImg4.jpg" />
-                                        <h3>Лыжный экстрим</h3>
-                                        <p>Таким образом дальнейшее развитие различных форм деятельности</p>
-                                    </a>
-                                </td>
-                            </tr>
+                            </tr>                           
                         </tbody>
                     </table>
                 </div>
@@ -101,34 +65,15 @@
                 <div class="iFriends">
                     <h2>Наши друзья</h2>
                     <ul>
-                        <li>
-                            <a href="#">
-                                <img src="images/khPartners.png" />
-                                <h3>Харьковская Швейцария</h3>
+                        <li ng-repeat="friend in friends">
+                            <a href="{{friend.a}}">
+                                <img src="{{friend.img}}" />
+                                <h3>{{friend.h}}</h3>
                             </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="images/bucPartners.png" />
-                                <h3>Буковель</h3>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="images/vorohtaPartners.png" />
-                                <h3>Горнолыжный курорт Ворохта</h3>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="images/extremePartners.png" />
-                                <h3>Магазин экстримального снаряжения</h3>
-                            </a>
-                        </li>
+                        </li>                       
                     </ul>
                 </div>
             </div>
-
             <footer>
                 <img src="images/logoBgMiniWE.png" />
                 <ul>
@@ -140,18 +85,14 @@
                 </ul>
             </footer>
         </div>
-
     </div>
-
-
-
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/angular/angular.js"></script>
-    <script src="app.js"></script>
+    <script src="js/app/mainApp.js"></script>
+    <script src="js/app/mainModuleApp.js"></script>
     <script src="components/lazy-carousel/lazy-carousel.module.js"></script>
     <script src="components/lazy-carousel/lazy-carousel.controller.js"></script>
     <script src="components/lazy-carousel/lazy-carousel.directive.js"></script>
     <script src="components/lazy-carousel/lazy-carousel.service.js"></script>
-
 </body>
 </html>

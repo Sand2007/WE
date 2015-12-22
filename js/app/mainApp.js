@@ -2,5 +2,4 @@
 
 
 // Declare app level module which depends on views, and components
-angular.module('myApp', ['rl.lazy-carousel']);
-
+angular.module('mainApp', ['rl.lazy-carousel', 'mainModuleApp']);
