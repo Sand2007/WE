@@ -1,0 +1,35 @@
+﻿[
+  {
+    "region": "Волынская",
+    "href": "../../data/placesPageData/kharkovskaja.json"
+  },
+  {
+    "region": "Закарпатская",
+    "href": "../../data/placesPageData/kharkovskaja.json"
+  },
+  {
+    "region": "Ивано-Франковская",
+    "href": "../../data/placesPageData/kharkovskaja.json"
+  },
+  {
+    "region": "Львовская",
+    "href": "../../data/placesPageData/lvovskaja.json"
+  },
+  {
+    "region": "Харьковская",
+    "href": "../../data/placesPageData/kharkovskaja.json"
+  },
+  {
+    "region": "Запорожская",
+    "href": "../../data/placesPageData/lvovskaja.json"
+  },
+  {
+    "region": "Полтавская",
+    "href": "../../data/placesPageData/lvovskaja.json"
+  },
+  {
+    "region": "Ровенская",
+    "href": "../../data/placesPageData/lvovskaja.json"
+  }  
+] 
+

@@ -121,7 +121,6 @@ nav.mainNav {           /*Навигационная панель*/
     background-size: cover;    
 }
 
-
 .news {                                              /*News*/
     width: 310px;
     height: 480px;
@@ -153,8 +152,6 @@ nav.mainNav {           /*Навигационная панель*/
     background: linear-gradient(to bottom, #003068 0%,#005C88 50%,#003068 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003068', endColorstr='#003068',GradientType=0 ); /* IE6-9 */
 }
-
-
 
 .news a {
     border-bottom: 1px solid #AFB0B2;
@@ -286,7 +283,8 @@ nav.mainNav {           /*Навигационная панель*/
 footer {
     height: 100px;
     width: 100%;
-    position: absolute;
+    margin-bottom: 10px;
+    position: relative;
     top: 1180px;
     background-color: white;
 }
