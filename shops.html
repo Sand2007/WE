@@ -1,13 +1,12 @@
 ﻿<!DOCTYPE html>
-<html ng-app="placesModuleApp">
+<html ng-app="shopsModuleApp">
 <head>
     <title>Места</title>
     <link href="css/style.css" rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet">
-    <link href="css/placesStyle.css" rel="stylesheet" />
-    <link rel="stylesheet" href="components/lazy-carousel/css/lazy-carousel-palaces.css">
+    <link href="css/shopsStyle.css" rel="stylesheet" />    
 </head>
-<body ng-controller="placesCtrl">
+<body ng-controller="shopsCtrl">
     <header>
         <!--Блок HEADER-->
         <div class="whiteStripe"></div>
@@ -27,7 +26,7 @@
         </div>
     </header>
     <div class="content">
-        <div class="iContentPlaces">
+        <div class="iContentShops">
             <div class="selectPlaces">
                 <div class="iSelectPlaces">
                     <h3>Выбирите область</h3>
@@ -35,7 +34,6 @@
                          ng-style="{'background-image':styleArrow}">{{textInput}}</div>
                 </div>
             </div>
-
             <div ng-show="showList" ng-class="optionsRegion">
                 <div ng-class="optionRegion"
                      ng-repeat="place in places"
@@ -43,38 +41,33 @@
                      ng-mouseleave="listMouseleave()"
                      ng-click="listClick(place)">{{place.region}}</div>
             </div>
-            <div ng-switch on="dataListPlaces">
-                <ul class="listPlaces" ng-switch-when="manyPlaces">
-                    <li ng-repeat="regionPlace in regionPlaces"
-                        ng-click="clickRegionPlace(regionPlace, $index)">
-                        <div class="iLi">
-                            <img src="{{regionPlace.img[0].img}}" />
-                            <div class="listPlacesText">
-                                <h3>{{regionPlace.h3}}</h3>
-                                <p>{{regionPlace.pre}}</p>
-                                <address>{{regionPlace.adress}}</address>
+            <div class="shopTilsLine" ng-repeat="shopLine in regionShops"
+                 ng-click="shopTileLineClick($index)">
+                <div class="shopTile" ng-repeat="shop in shopLine"
+                     ng-click="shopTileClick(shop, $index)">
+                    <div class="iShopTile">
+                        <img src="{{shop.img}}" />
+                        <h3>{{shop.h3}}</h3>
+                        <p>{{shop.pre}}</p>
+                        <span>{{shop.city}}</span>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div ng-show="$index == indexShopTileLine">
+                    <div ng-class="whiteBox"></div>
+                    <div class="showShopDescription">
+                        <div class="iShowShopDescription">
+                            <h3>{{shopObject.h3}}</h3>
+                            <p ng-repeat="shopP in shopObject.p">{{shopP}}</p>
+                            <div class="placeAdress">
+                                <adress class="adressShop">Адресс: {{shopObject.adress}}</adress>
+                                <p>Официальный сайт: <a class="siteShop" href="{{shopObject.site}}">{{shopObject.site}}</a></p>
+                                <span class="phoneShop">Телефон: {{shopObject.phone}}</span>
                             </div>
                         </div>
-                        <div class="clear"></div>
-                    </li>
-                </ul>
-                <div ng-switch-when="onePlace" class="onePlace">
-                    <h3>{{regionPlace.h3}}</h3>
-                    <!--Карусель-->
-                    <div class="iCarouselPlaces">
-                        <div id="lazy-1" lazy-carousel data-source="{{index}}"></div>
                     </div>
-                    <div class="iPlaceDescription">
-                        <p ng-repeat="rP in regionPlace.p">{{rP}}</p>
-                        <div class="placeAdress">
-                            <p>Адресс: {{regionPlace.adress}}</p>
-                            <p>Официальный сайт: <a href="{{regionPlace.site}}">{{regionPlace.site}}</a></p>
-                        </div>
-                    </div>
-
-                    <div class="clear"></div>
-                </div>
-            </div>
+                </div>  
+            </div>           
             <footer>
                 <img src="images/logoBgMiniWE.png" />
                 <ul>
@@ -86,18 +79,9 @@
                 </ul>
             </footer>
         </div>
-
     </div>
-
-
-    
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/angular/angular.js"></script>
-    <script src="js/app/placesModuleApp.js"></script>
-    <script src="components/lazy-carousel/view/lazy-carusel-places.module.js"></script>
-    <script src="components/lazy-carousel/view/lazy-carusel-places.service.js"></script>
-    <script src="components/lazy-carousel/view/lazy-carousel-places.directive.js"></script>
-    <script src="components/lazy-carousel/view/lazy-carousel-places.controller.js"></script>
-
+    <script src="js/app/shopsModuleApp.js"></script>
 </body>
 </html>

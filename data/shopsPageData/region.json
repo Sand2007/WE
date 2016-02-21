@@ -1,0 +1,35 @@
+﻿[
+  {
+    "region": "Волынская",
+    "href": "../../data/shopsPageData/kharkovskaja.json"
+  },
+  {
+    "region": "Закарпатская",
+    "href": "../../data/shopsPageData/kharkovskaja.json"
+  },
+  {
+    "region": "Ивано-Франковская",
+    "href": "../../data/shopsPageData/kharkovskaja.json"
+  },
+  {
+    "region": "Львовская",
+    "href": "../../data/shopsPageData/lvovskaja.json"
+  },
+  {
+    "region": "Харьковская",
+    "href": "../../data/shopsPageData/kharkovskaja.json"
+  },
+  {
+    "region": "Запорожская",
+    "href": "../../data/shopsPageData/lvovskaja.json"
+  },
+  {
+    "region": "Полтавская",
+    "href": "../../data/shopsPageData/lvovskaja.json"
+  },
+  {
+    "region": "Ровенская",
+    "href": "../../data/shopsPageData/lvovskaja.json"
+  }  
+] 
+

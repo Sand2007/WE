@@ -1,6 +1,6 @@
 ﻿angular.module('placesModuleApp', [])
 
-.controller('placesCtrl', function ($scope, $http, $rootScope) {
+.controller('placesCtrl', function ($scope, $http) {
 
     //при старте странички загружаем с сервера топ 5 мест для зимнего отдыха и список регионов дальше отображаем топ 5 мест
         $scope.loadPlace = function () {
