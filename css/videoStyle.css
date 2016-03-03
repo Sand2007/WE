@@ -1,0 +1,93 @@
+﻿.content {              /*Установка резиновой высоты всего контента*/
+    height: auto;
+    margin-top: 10px;
+    /*outline: 1px solid white;*/
+}
+
+.iContentVideo {
+    height: auto;
+    width: 970px;
+    position: relative;
+    margin: 0 auto;
+    background-color: white;
+    padding-bottom: 10px;
+    /*outline: 1px solid red;*/
+}
+
+.mainVideo {
+    height: 402px;
+    width: 628px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    border: 1px solid #AFB0B2;
+    background-color: #EEEEEE;
+}
+
+.mainVideo iframe {
+    height: 353px;
+    width: 100%;
+}
+
+.mainVideo h3 {
+    height: 49px;
+    width: 100%;
+    font-size: 18px;
+    margin-left: 5px;
+    line-height: 45px;
+    /*font-weight: bold;*/
+    color: #152C53; 
+    /*outline: 1px solid black;*/    
+}
+
+.secondaryVideo {
+    height: 195px;
+    width: 308px;
+    background-color: #EEEEEE;
+    border: 1px solid #AFB0B2;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    position: relative;   
+}
+
+.blackDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 173px;
+    width: 308px;
+    background-color: black;
+    opacity: 0;       
+}
+
+.blackDiv:hover {
+    opacity: 0.4;
+}
+
+.secondaryVideo img {
+    height: 173px;
+    width: 100%;
+}
+
+.secondaryVideo h3 {
+    height: 22px;
+    width: 100%;
+    font-size: 14px;
+    margin: 2px 5px;
+    /*font-weight: bold;*/
+    color: #152C53; 
+    /*outline: 1px solid black;*/
+}
+
+.clear {
+    clear:both;
+}
+
+footer {
+    top: 10px;
+    width: 970px;
+    margin: 0 auto;
+}

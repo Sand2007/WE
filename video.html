@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html ng-app="videoModuleApp">
+<head>
+    <title>Места</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/videoStyle.css" rel="stylesheet" />
+    
+</head>
+<body ng-controller="videoCtrl">
+    <header>
+        <!--Блок HEADER-->
+        <div class="whiteStripe"></div>
+        <div class="iHeader">
+            <div class="mainLogo">
+                <a href="index.html"></a>
+            </div>
+            <nav class="mainNav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="places.html">Места</a></li>
+                    <li><a href="shops.html">Магазины</a></li>
+                    <li><a href="video.html">Видео</a></li>
+                    <li><a href="#">Блог</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="content">
+        <div class="iContentVideo">
+            <div class="mainVideo">
+                <iframe ng-src={{mainVideo}} frameborder="0" allowfullscreen></iframe>
+                <h3>{{mainVideoDescription}}</h3>
+            </div>
+            <div ng-repeat="video in videos"
+                 ng-click="clickSecondVideo(video, $index)" class="secondaryVideo"><img src="http://img.youtube.com/vi/{{video.id}}/mqdefault.jpg"><h3>{{video.videoDescription}}</h3><span class="blackDiv"></span></div>            
+            <div class="clear"></div>            
+        </div>
+        <footer>
+            <img src="images/logoBgMiniWE.png" />
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="places.html">Места</a></li>
+                <li><a href="shops.html">Магазины</a></li>
+                <li><a href="video.html">Видео</a></li>
+                <li><a href="#">Блог</a></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="js/app/videoModuleApp.js"></script>
+</body>
+</html>
