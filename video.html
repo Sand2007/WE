@@ -28,14 +28,45 @@
     </header>
     <div class="content">
         <div class="iContentVideo">
-            <div class="mainVideo">
-                <iframe ng-src={{mainVideo}} frameborder="0" allowfullscreen></iframe>
-                <h3>{{mainVideoDescription}}</h3>
+
+            <div class="videoPlace">
+                <div class="mainVideo">
+                    <iframe ng-src={{mainVideo}} frameborder="0" allowfullscreen></iframe>
+                    <h3>{{mainVideoDescription}}</h3>
+                </div>
+                <div ng-repeat="video in videos | startFrom:currentPage*pageSize | limitTo:pageSize"
+                     ng-click="clickSecondVideo(video, $index)" class="secondaryVideo">
+                    <img src="http://img.youtube.com/vi/{{video.id}}/mqdefault.jpg">
+                    <h3>{{video.videoDescription}}</h3>
+                    <span class="blackDiv"></span>
+                </div>
+                <div class="clear"></div>
             </div>
-            <div ng-repeat="video in videos"
-                 ng-click="clickSecondVideo(video, $index)" class="secondaryVideo"><img src="http://img.youtube.com/vi/{{video.id}}/mqdefault.jpg"><h3>{{video.videoDescription}}</h3><span class="blackDiv"></span></div>            
-            <div class="clear"></div>            
+            <div class="leftSlidePlace">
+                <button ng-disabled="currentPage == 0" ng-click="currentPage=currentPage-1" class="paginationPrevious">
+                    <img src="images/leftArrowSlide2.png" class="leftArrowImg" />
+                </button>
+            </div>
+            <div class="rightSlidePlace">
+                <button ng-disabled="currentPage >= videos.length/pageSize - 1" ng-click="currentPage=currentPage+1; a=0+1" class="paginationNext">
+                    <img src="images/rightArrowSlide2.png" class="rightArrowImg" />
+                </button>
+            </div>
+
+
+
         </div>
+
+
+
+        
+        
+
+
+
+
+
+
         <footer>
             <img src="images/logoBgMiniWE.png" />
             <ul>

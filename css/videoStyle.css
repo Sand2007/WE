@@ -10,8 +10,20 @@
     position: relative;
     margin: 0 auto;
     background-color: white;
+    
+    /*outline: 1px solid red;*/
+    
+}
+
+.videoPlace {
+    height: auto;
+    width: 970px;
+    position: relative;
+    margin: 0 auto;
+    background-color: white;
     padding-bottom: 10px;
     /*outline: 1px solid red;*/
+    z-index: 50;
 }
 
 .mainVideo {
@@ -86,8 +98,108 @@
     clear:both;
 }
 
+/*Блок пагинации*/
+
+.paginationPlace {
+    height: 60px;
+    width: 20px;
+}
+
 footer {
     top: 10px;
     width: 970px;
     margin: 0 auto;
+}
+
+@-webkit-keyframes showLeftSlider {
+    from {right: -25px;}
+    to {right: -50px;}
+}
+
+@keyframes  showLeftSlider {
+    from {right: -25px;}
+    to {right: 0}
+}
+
+.leftSlidePlace {
+    position: absolute;
+    height: 100%;
+    width: 50px;    
+    left: -50px;
+    top: 0;   
+}
+
+.paginationPrevious {
+    position: absolute;
+    height: 100%;
+    width: 50px;
+    right: -30px;
+    top: 0;
+    background-color:  #00025C;
+    border: 0;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.paginationPrevious:hover {
+    -webkit-animation: showLeftSlider 0.5s;
+    animation: showLeftSlider 0.5s;
+    -webkit-animation-iteration-count: 1; 
+    animation-iteration-count: 1;
+   -webkit-animation-fill-mode: forwards; 
+    animation-fill-mode: forwards;
+    background-color:  #00013C;
+    opacity: 0.9;    
+}
+
+.leftArrowImg {
+    height: auto;
+    width: auto;
+    
+}
+
+@-webkit-keyframes showRightSlider {
+    from {left: -25px;}
+    to {left: -50px;}
+}
+
+@keyframes  showRightSlider {
+    from {left: -25px;}
+    to {left: 0}
+}
+
+.rightSlidePlace {
+    position: absolute;
+    height: 100%;
+    width: 50px;    
+    right: -50px;
+    top: 0;
+}
+
+.paginationNext {
+    position: absolute;
+    height: 100%;
+    width: 50px;
+    left: -30px;
+    top: 0;
+    background-color:  #00025C;
+    border: 0;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.paginationNext:hover {
+    -webkit-animation: showRightSlider 0.5s;
+    animation: showRightSlider 0.5s;
+    -webkit-animation-iteration-count: 1; 
+    animation-iteration-count: 1;
+   -webkit-animation-fill-mode: forwards; 
+    animation-fill-mode: forwards;
+    background-color:  #00013C;
+    opacity: 0.9;    
+}
+
+.rightArrowImg {
+    height: auto;
+    width: auto;    
 }
